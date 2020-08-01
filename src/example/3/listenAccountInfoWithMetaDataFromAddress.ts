@@ -5,7 +5,7 @@ import {
   AccountListener,
 } from "nem-library";
 
-import { webSocketConfigs } from "../configs/nodes";
+import { webSocketConfigs } from "../../configs/nodes";
 
 NEMLibrary.bootstrap(NetworkTypes.MAIN_NET);
 
