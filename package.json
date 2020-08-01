@@ -1,0 +1,23 @@
+{
+  "name": "nem-library-sample-code",
+  "version": "1.0.0",
+  "description": "NEM, NIS1のSDKのnem-libraryのサンプルコード集です。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasunoriMATSUOKA/nem-library-sample-code.git"
+  },
+  "author": "YasunoriMATSUOKA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YasunoriMATSUOKA/nem-library-sample-code/issues"
+  },
+  "homepage": "https://github.com/YasunoriMATSUOKA/nem-library-sample-code#readme",
+  "dependencies": {
+    "nem-library": "^2.0.0-RC4",
+    "rxjs": "^6.6.2"
+  }
+}
