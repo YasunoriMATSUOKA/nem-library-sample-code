@@ -1,7 +1,9 @@
 import { ServerConfig } from "nem-library";
+import { WebSocketConfig } from "nem-library/dist/src/infrastructure/Listener";
 
 const httpsProtocol = "https";
 const httpsPort = 7891;
+const httpsWebSocketPort = 7779;
 
 // 以下では、https://github.com/ethersecurity/nodes/blob/master/nem/nodes.txt のノードを使わせて頂いています。ありがとうございます。
 export const serverConfigs: ServerConfig[] = [
@@ -111,3 +113,14 @@ export const serverConfigs: ServerConfig[] = [
     port: httpsPort,
   },
 ];
+
+export const webSocketConfigs: WebSocketConfig[] = serverConfigs.map(
+  (serverConfig: ServerConfig) => {
+    const tempWebSocketConfig: WebSocketConfig = {
+      protocol: serverConfig.protocol,
+      domain: serverConfig.domain,
+      port: httpsWebSocketPort,
+    };
+    return tempWebSocketConfig;
+  }
+);
