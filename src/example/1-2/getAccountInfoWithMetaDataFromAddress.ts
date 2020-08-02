@@ -5,7 +5,7 @@
 import { NEMLibrary, NetworkTypes, AccountHttp, Address } from "nem-library";
 
 // 他の箇所でも何度も使用するので、一か所でまとめて定義してexportしたものをimportして使用
-import { serverConfigs } from "../../configs/nodes";
+import { serverConfigs } from "../../config/nodes";
 
 // 以降は1と同様
 NEMLibrary.bootstrap(NetworkTypes.MAIN_NET);
